@@ -27,7 +27,7 @@ while (rs.error_code == '0') & rs.next():
 result = pd.DataFrame(data_list, columns=rs.fields)
 
 #### 结果集输出到csv文件 ####   
-result.to_csv(".分钟线/history_A_stock_k_data.csv", index=False)
+result.to_csv("./分钟线/history_A_stock_k_data.csv", index=False)
 display(result)
 
 #### 登出系统 ####
